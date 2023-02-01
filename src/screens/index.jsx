@@ -1,6 +1,7 @@
 import {
   HomepageAboutSection,
   HomepageBanner,
+  IndustriesSolution,
   TokenizationHomepage,
 } from "../components";
 
@@ -10,6 +11,7 @@ export default function Index() {
       <HomepageBanner />
       <HomepageAboutSection />
       <TokenizationHomepage />
+      <IndustriesSolution />
     </>
   );
 }

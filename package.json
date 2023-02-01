@@ -15,7 +15,8 @@
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "6.8.0"
+    "react-router-dom": "6.8.0",
+    "swiper": "^8.4.7"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
