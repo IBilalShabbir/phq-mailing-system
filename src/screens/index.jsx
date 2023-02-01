@@ -12,6 +12,7 @@ export default function Index() {
       <HomepageAboutSection />
       <TokenizationHomepage />
       <IndustriesSolution />
+      <StartYourTokenization />
     </>
   );
 }

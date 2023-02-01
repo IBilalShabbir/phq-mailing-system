@@ -23,17 +23,9 @@ export default function IndustriesSolution() {
   return (
     <div className="industries__solutions">
       <div className="industries__solutions__heading heading">
-        Software solutions for industry leaders
+        ASSETS WHICH CAN BE TOKENIZED
       </div>
-      <div className="industries__solutions__info">
-        Need a software solution that’s right for you? Choose a digital product
-        crafted to answer the challenges of your industry. Small or big,
-        startup, or enterprise – we partner with companies of various sizes and
-        profiles on their way to innovation and growth. Empower your business
-        with a state-of-the-art digital solution, tailored to your needs and
-        expectations. Revolutionizing the way business is conducted across
-        industries with the latest technology introductions. Healthcare
-      </div>
+
       <div className="industries__solutions__content">
         <Swiper
           slidesPerView={slidesPerView}
@@ -44,7 +36,7 @@ export default function IndustriesSolution() {
           loop
           modules={[Autoplay, FreeMode]}
           freeMode={true}
-          speed={2500}
+          speed={3000}
           autoplay={{
             delay: 1,
             disableOnInteraction: false,

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function IndustrySolutionCard({ image, title, info }) {
   return (
     <div className="industries__solutions__content__card">
