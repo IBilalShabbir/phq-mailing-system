@@ -20,6 +20,18 @@ export default function IndustriesSolution() {
     changeSlidesPerView();
     window.addEventListener("resize", changeSlidesPerView);
   }, []);
+
+  const colors = ["#242424", "#f3f3f3"];
+  const titles = ["Real Estate", "Art", "Music", "Sports", "Digital Assets"];
+
+  const newTitles = [];
+  for (let i = 0; i < titles.length; i++) {
+    newTitles.push({
+      title: titles[i % titles.length],
+      color: colors[i % colors.length],
+    });
+  }
+  console.log(newTitles);
   return (
     <div className="industries__solutions">
       <div className="industries__solutions__heading heading">
@@ -27,6 +39,9 @@ export default function IndustriesSolution() {
       </div>
 
       <div className="industries__solutions__content">
+        {newTitles.map((item, index) => (
+          <div style={{ background: item.color }}>{item.title}</div>
+        ))}
         <Swiper
           slidesPerView={slidesPerView}
           spaceBetween={30}
