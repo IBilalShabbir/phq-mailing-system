@@ -301,12 +301,6 @@
   border-radius: 10px;
   min-height: 300px;
 }
-.industries__solutions__content__card:nth-child(2) {
-  background-color: var(--primary);
-}
-.industries__solutions__content__card:nth-child(even) {
-  background-color: var(--dark);
-}
 .industries__solutions__content__card__img {
   height: 60px;
 }
@@ -381,8 +375,71 @@
   width: 40px;
   height: 30px;
 }
-
 //------------------------------------------------------------------------------------------------------------------------------------------------------
+//homepage our specities
+.homepage__ourspecities {
+  width: 100%;
+  height: 100%;
+  padding: 5em 0em;
+  padding-top: 0em;
+}
+.homepage__our__specialities__container {
+  width: calc(100% - 2em);
+  margin: 0px auto;
+  margin-left: 2em;
+  display: flex;
+  padding: 4em;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #281740;
+}
+
+.homepage__our__specialities__container__title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: flex-start;
+  width: 100%;
+  color: var(--white);
+}
+.homepage__our__specialities__container__slider {
+  width: 100%;
+}
+.OurSpecialistCards__solutions__content__card {
+  background-color: #12091e;
+  padding: 2em 1.5em;
+  border-radius: 10px;
+  min-height: 300px;
+}
+.OurSpecialistCards__solutions__content__card svg {
+  width: 50px;
+}
+.OurSpecialistCards__solutions__content__card__heading {
+  font-size: 22px;
+  color: var(--white);
+  margin: 0.5em 0em;
+  font-weight: bold;
+}
+.OurSpecialistCards__solutions__content__card__info {
+  font-size: 15px;
+  color: #878787;
+}
+.homepage__our__specialities__container__slider__arrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+.homepage__our__specialities__container__slider__arrow svg {
+  fill: var(--white);
+  width: 50px;
+}
+.homepage__our__specialities__container__slider__arrow svg:hover {
+  fill: var(--dark);
+}
 @media (max-width: 1200px) {
   .header__container__text__section__heading {
     font-size: 30px;
