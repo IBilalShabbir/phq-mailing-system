@@ -1,0 +1,277 @@
+.header__container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 600px;
+  position: relative;
+}
+.header__container img {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  z-index: -1;
+  object-fit: cover;
+}
+.header__container__text__section {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 2em;
+  color: white;
+}
+// .header__container__text__section__subheading {
+//   color: white;
+// }
+.about__section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1em 2em 4em 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__section__heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1b1b1b;
+  margin-bottom: 0.6em;
+}
+.about__section__text {
+  font-size: 14px;
+  color: #2e2e2e;
+  max-width: 1000px;
+  line-height: 140%;
+  margin-bottom: 5em;
+}
+.about__section__cards {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__section__card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 30%;
+  border-radius: 20px;
+  padding: 4em 2em 2em 2em;
+  justify-content: space-between;
+}
+.about__section__card__upper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 85%;
+}
+.about__section__card__icon {
+  margin-bottom: 1em;
+  color: #3a0457;
+}
+.about__section__card__heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+}
+.about__section__card__text {
+  font-size: 14px;
+  line-height: 140%;
+  color: #646464;
+  margin-bottom: 1em;
+}
+.about__section__card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__section__card__more {
+  color: #3a0457;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about__section__card__number {
+  background: linear-gradient(#ffbf01, #c89500);
+  padding: 0.5em 0.8em;
+  font-size: 30px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+.about__section__card:hover {
+  background: linear-gradient(#450161, #0b132f);
+
+  .about__section__card__icon {
+    color: #c89500;
+  }
+  .about__section__card__heading {
+    color: #eeeeee;
+  }
+  .about__section__card__text {
+    color: #eeeeee;
+    opacity: 60%;
+  }
+  .about__section__card__more {
+    color: white;
+  }
+}
+.tokenization__section {
+  width: 100%;
+  max-width: 1650px;
+  padding: 12em 2em 2em;
+  margin: 0 auto;
+}
+.tokenization__section__blue {
+  background-color: #1a0d2b;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2em;
+}
+.tokenization__section__blue__img img {
+  margin-top: -10em;
+}
+.tokenization__section__blue__highlight {
+  color: white;
+  background: linear-gradient(to right, #090808, #640168);
+  padding: 0.5em 2em;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1.5em 1em;
+  text-align: center;
+}
+.tokenization__section__blue__subheading {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.tokenization__section__blue__heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+.tokenization__section__blue__text {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  font-size: 12px;
+}
+.tokenization__section__blue__cards {
+  display: flex;
+  padding: 2em 0 3em 0;
+}
+.tokenization__section__blue__cards__card {
+  display: flex;
+  color: white;
+  background: linear-gradient(#640168, #a200a8);
+  border-radius: 20px;
+  width: 450px;
+  margin-right: 1.5em;
+  padding: 2em;
+  justify-content: space-between;
+}
+
+.tokenization__section__blue__cards__card:last-child {
+  margin-right: 0px;
+  background: linear-gradient(#026a6a, #039f9f);
+}
+.tokenization__section__blue__cards__card__icon {
+  margin-top: 1em;
+}
+.tokenization__section__blue__cards__card__text {
+  width: 60%;
+}
+.tokenization__section__blue__cards__card__text__heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.tokenization__section__blue__cards__card__text__subheading {
+  font-size: 14px;
+  color: #d0d0d1;
+  margin: 1em 0;
+}
+.tokenization__section__blue__cards__card__text__more {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 1080px) {
+  .about__section__cards {
+    width: 100%;
+  }
+  .tokenization__section__blue__cards {
+    flex-direction: column;
+  }
+  .tokenization__section__blue__cards__card {
+    margin-right: 0em;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 2em 1em;
+  }
+  .tokenization__section__blue__cards__card__text {
+    width: 80%;
+    margin-left: 1em;
+  }
+  .tokenization__section__blue__cards__card__icon svg {
+    width: 63px;
+  }
+}
+
+@media (max-width: 920px) {
+  .about__section__cards {
+    width: 80%;
+    justify-content: center;
+  }
+  .about__section__card {
+    width: 45%;
+    margin-bottom: 1.3em;
+  }
+  .about__section__card:nth-child(1) {
+    margin-right: 1.5em;
+  }
+}
+@media (max-width: 750px) {
+  .about__section__cards {
+    width: 80%;
+    justify-content: center;
+  }
+  .about__section__card {
+    width: 80%;
+    margin-bottom: 1.3em;
+  }
+  .about__section__card:nth-child(1) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 520px) {
+  .about__section__cards {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .about__section__card {
+    width: 95%;
+  }
+  .tokenization__section__blue__heading {
+    font-size: 30px;
+  }
+}
