@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Pagination, Navigation, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import OurSpecialistCards from "./OurSpecialistCards";
+import "swiper/css/navigation";
 
 export default function Ourspecialities() {
   const nextRef = React.useRef(null);
@@ -28,10 +30,18 @@ export default function Ourspecialities() {
         </div>
         <div className="homepage__our__specialities__container__slider">
           <Swiper
-            slidesPerView={slidesPerView}
             spaceBetween={30}
             style={{
               marginTop: "2em",
+            }}
+            modules={[Pagination, Navigation, FreeMode]}
+            loop
+            pagination={true}
+            slidesPerView={slidesPerView}
+            onInit={(swiper) => {
+              swiper.params.navigation.nextEl = nextRef.current;
+              swiper.navigation.init();
+              swiper.navigation.update();
             }}
           >
             <SwiperSlide>
@@ -594,7 +604,7 @@ export default function Ourspecialities() {
               />
             </SwiperSlide>
             <div className="homepage__our__specialities__container__slider__arrow">
-              <button>
+              <button ref={nextRef}>
                 <svg
                   width="65"
                   height="24"
