@@ -1,6 +1,7 @@
 import Aboutcard from './Aboutcard.jsx'
 import Close from './Close.jsx'
 import Footer from './Footer.jsx'
+import GetInTouch from './GetInTouch.jsx'
 import Header from './Header.jsx'
 import HomepageAboutSection from './HomepageAboutSection.jsx'
 import HomepageBanner from './HomepageBanner.jsx'
@@ -13,6 +14,8 @@ import Ourspecialities from './Ourspecialities.jsx'
 import RecentlyListedAssets from './RecentlyListedAssets.jsx'
 import RecentlyListedCard from './RecentlyListedCard.jsx'
 import StartYourTokenization from './StartYourTokenization.jsx'
+import TestinomialEntry from './TestinomialEntry.jsx'
+import Testinomials from './Testinomials.jsx'
 import Tokencard from './Tokencard.jsx'
 import TokenizationHomepage from './TokenizationHomepage.jsx'
 
@@ -20,6 +23,7 @@ export {
   Aboutcard,
   Close,
   Footer,
+  GetInTouch,
   Header,
   HomepageAboutSection,
   HomepageBanner,
@@ -32,6 +36,8 @@ export {
   RecentlyListedAssets,
   RecentlyListedCard,
   StartYourTokenization,
+  TestinomialEntry,
+  Testinomials,
   Tokencard,
   TokenizationHomepage
 }

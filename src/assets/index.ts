@@ -8,6 +8,7 @@ import PngOurclientseven from './ourclientseven.png'
 import PngOurclientsix from './ourclientsix.png'
 import PngOurclientthree from './ourclientthree.png'
 import PngOurclienttwo from './ourclienttwo.png'
+import PngProfileimg from './profileimg.png'
 import SvgReact from './react.svg'
 import PngStartyour from './startyour.png'
 import PngYellowbox from './yellowbox.png'
@@ -23,6 +24,7 @@ export {
   PngOurclientsix,
   PngOurclientthree,
   PngOurclienttwo,
+  PngProfileimg,
   SvgReact,
   PngStartyour,
   PngYellowbox

@@ -1,4 +1,5 @@
 import {
+  GetInTouch,
   HomepageAboutSection,
   HomepageBanner,
   IndustriesSolution,
@@ -6,6 +7,7 @@ import {
   Ourspecialities,
   RecentlyListedAssets,
   StartYourTokenization,
+  Testinomials,
   TokenizationHomepage,
 } from "../components";
 
@@ -20,6 +22,8 @@ export default function Index() {
       <Ourspecialities />
       <OurClientsHomepage />
       <RecentlyListedAssets />
+      <Testinomials />
+      <GetInTouch />
     </>
   );
 }
