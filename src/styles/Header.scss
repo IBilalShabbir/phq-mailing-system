@@ -3,7 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1c0f2e;
+  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 .nav__bar__container {
   display: flex;
@@ -92,8 +95,22 @@
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .nav__bar__btn__menu {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav__bar__container {
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+    top: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 6px 40px;
+    border-radius: 12px;
   }
 }
