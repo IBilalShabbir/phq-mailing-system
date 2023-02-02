@@ -4,6 +4,7 @@ import {
   IndustriesSolution,
   OurClientsHomepage,
   Ourspecialities,
+  RecentlyListedAssets,
   StartYourTokenization,
   TokenizationHomepage,
 } from "../components";
@@ -18,6 +19,7 @@ export default function Index() {
       <StartYourTokenization />
       <Ourspecialities />
       <OurClientsHomepage />
+      <RecentlyListedAssets />
     </>
   );
 }
