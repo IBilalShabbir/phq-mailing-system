@@ -4,6 +4,7 @@ import Menu from "./Menu";
 import logo from "../assets/logo.png";
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolling, setIsScrolling] = React.useState(false);
   function checkNavOpenClose() {
     if (window.innerWidth < 950) {
       setIsOpen(false);
@@ -16,10 +17,18 @@ export default function Header() {
     window.addEventListener("resize", checkNavOpenClose);
     window.addEventListener("scroll", () => {
       checkNavOpenClose();
+      window.scrollY > 0 ? setIsScrolling(true) : setIsScrolling(false);
+      console.log(window.scrollY);
     });
   }, []);
   return (
-    <div className="nav__bar__wraper">
+    <div
+      className={
+        isScrolling
+          ? "nav__bar__wraper nav__bar__wraper__active"
+          : "nav__bar__wraper"
+      }
+    >
       <div className="header__nav__bar__container">
         <div className="nav__bar__logo">
           <img src={logo} alt="logo" />

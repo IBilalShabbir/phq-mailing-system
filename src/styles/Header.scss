@@ -8,6 +8,9 @@
   top: 0;
   z-index: 999;
 }
+.nav__bar__wraper__active {
+  background-color: #020202;
+}
 .nav__bar__container {
   display: flex;
   align-items: center;
