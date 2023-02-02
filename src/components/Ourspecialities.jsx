@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Pagination, Navigation, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import OurSpecialistCards from "./OurSpecialistCards";
-import "swiper/css/navigation";
 
 export default function Ourspecialities() {
   const nextRef = React.useRef(null);

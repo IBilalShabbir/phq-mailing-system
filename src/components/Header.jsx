@@ -1,6 +1,6 @@
-import { Close } from "./Close";
-import { Menu } from "./Menu";
 import React from "react";
+import Close from "./Close";
+import Menu from "./Menu";
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (

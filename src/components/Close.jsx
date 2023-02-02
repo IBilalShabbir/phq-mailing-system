@@ -1,4 +1,4 @@
-export function Close({ size, color }) {
+export default function Close({ size, color }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
