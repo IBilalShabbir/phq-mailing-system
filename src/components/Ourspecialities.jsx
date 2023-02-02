@@ -33,9 +33,8 @@ export default function Ourspecialities() {
             style={{
               marginTop: "2em",
             }}
-            modules={[Pagination, Navigation, FreeMode]}
+            modules={[Navigation, FreeMode]}
             loop
-            pagination={true}
             slidesPerView={slidesPerView}
             onInit={(swiper) => {
               swiper.params.navigation.nextEl = nextRef.current;

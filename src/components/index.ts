@@ -11,6 +11,7 @@ import OurClientsHomepage from './OurClientsHomepage.jsx'
 import OurSpecialistCards from './OurSpecialistCards.jsx'
 import Ourspecialities from './Ourspecialities.jsx'
 import RecentlyListedAssets from './RecentlyListedAssets.jsx'
+import RecentlyListedCard from './RecentlyListedCard.jsx'
 import StartYourTokenization from './StartYourTokenization.jsx'
 import Tokencard from './Tokencard.jsx'
 import TokenizationHomepage from './TokenizationHomepage.jsx'
@@ -29,6 +30,7 @@ export {
   OurSpecialistCards,
   Ourspecialities,
   RecentlyListedAssets,
+  RecentlyListedCard,
   StartYourTokenization,
   Tokencard,
   TokenizationHomepage

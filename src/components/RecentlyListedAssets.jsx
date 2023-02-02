@@ -1,9 +1,28 @@
-import React from "react";
-import { Autoplay, FreeMode, Pagination } from "swiper";
+import React, { useEffect, useState } from "react";
+import { Autoplay, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { PngStartyour } from "../assets";
+import RecentlyListedCard from "./RecentlyListedCard";
 
 export default function RecentlyListedAssets() {
+  const [slidesPerView, setSlidesPerView] = useState(5);
+  function changeSlidesPerView() {
+    if (window.innerWidth < 540) {
+      setSlidesPerView(1.2);
+    } else if (window.innerWidth < 800) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth < 1000) {
+      setSlidesPerView(3);
+    } else if (window.innerWidth < 1400) {
+      setSlidesPerView(4);
+    } else {
+      setSlidesPerView(5);
+    }
+  }
+  useEffect(() => {
+    changeSlidesPerView();
+    window.addEventListener("resize", changeSlidesPerView);
+  }, []);
   return (
     <div className="recently__listed__assets">
       <div className="our__clients__homepage__container">
@@ -11,105 +30,73 @@ export default function RecentlyListedAssets() {
           Recently Listed Assets
         </div>
         <div className="recently__listed__assets__cards">
-          <div className="recently__listed__assets__slider">
-            <div className="recently__listed__assets__slider__item">
-              <div className="recently__listed__assets__slider__item__heading">
-                New Listing
-              </div>
-              <Swiper
-                spaceBetween={0}
-                loop
-                modules={[Autoplay, Pagination, FreeMode]}
-                freeMode={true}
-                speed={3000}
-                pagination={{
-                  clickable: true,
-                }}
-                scrollbar={{ draggable: true }}
-                autoplay={{
-                  delay: 1,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
-                }}
-              >
-                <SwiperSlide>
-                  <div className="recently__listed__assets__slider__item__entry">
-                    <img src={PngStartyour} alt="PngStartyour" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="recently__listed__assets__slider__item__entry">
-                    <img src={PngStartyour} alt="PngStartyour" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="recently__listed__assets__slider__item__entry">
-                    <img src={PngStartyour} alt="PngStartyour" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="recently__listed__assets__slider__item__entry">
-                    <img src={PngStartyour} alt="PngStartyour" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="recently__listed__assets__slider__item__entry">
-                    <img src={PngStartyour} alt="PngStartyour" />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-            <div className="recently__listed__assets__slider__item__bottom">
-              <button className="recently__listed__assets__slider__item__bottom__btn">
-                Real Estate
-              </button>
-              <div className="recently__listed__assets__slider__item__bottom__heading">
-                Studio in Studio One - Dubai Marina
-              </div>
-              <div className="recently__listed__assets__slider__item__bottom__price">
-                <div className="recently__listed__assets__slider__item__bottom__price__value">
-                  <span>AED </span>736,393
-                </div>
-                <div className="recently__listed__assets__slider__item__bottom__price__investors">
-                  116 investors
-                </div>
-              </div>
-              <div className="recently__listed__assets__slider__item__bottom__detail">
-                <div className="recently__listed__assets__slider__item__bottom__detail__entry">
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__title">
-                    Annualised return
-                  </div>
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__value">
-                    11.10%
-                  </div>
-                </div>
-                <div className="recently__listed__assets__slider__item__bottom__detail__entry">
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__title">
-                    Funded Date
-                  </div>
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__value">
-                    12 Jan 2023
-                  </div>
-                </div>
-                <div className="recently__listed__assets__slider__item__bottom__detail__entry">
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__title">
-                    Current Valuation
-                  </div>
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__value">
-                    AED 760,000
-                  </div>
-                </div>
-                <div className="recently__listed__assets__slider__item__bottom__detail__entry">
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__title">
-                    Total rent paid
-                  </div>
-                  <div className="recently__listed__assets__slider__item__bottom__detail__entry__value">
-                    AED 0
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Swiper
+            style={{
+              marginTop: "2em",
+            }}
+            loop
+            spaceBetween={30}
+            modules={[Autoplay, FreeMode]}
+            freeMode={true}
+            speed={3500}
+            autoplay={{
+              delay: 1,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            slidesPerView={slidesPerView}
+          >
+            <SwiperSlide>
+              <RecentlyListedCard
+                heading="New Listing"
+                bottombtn="Real Estate"
+                mainheading="Studio in Studio One - Dubai Marina"
+                budget="736,393"
+                investers="116 investors"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <RecentlyListedCard
+                heading="New Listing"
+                bottombtn="Gold"
+                mainheading="Studio in Studio One - Dubai Marina"
+                budget="736,393"
+                investers="116 investors"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <RecentlyListedCard
+                heading="New Listing"
+                bottombtn="Real Estate"
+                mainheading="Studio in Studio One - Dubai Marina"
+                budget="736,393"
+                investers="116 investors"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <RecentlyListedCard
+                heading="New Listing"
+                bottombtn="dubai"
+                mainheading="Studio in Studio One - Dubai Marina"
+                budget="736,393"
+                investers="116 investors"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <RecentlyListedCard
+                heading="New Listing"
+                bottombtn="dubai"
+                mainheading="Studio in Studio One - Dubai Marina"
+                budget="736,393"
+                investers="116 investors"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="recently__listed__assets__cards__see__more">
+          <button className="recently__listed__assets__cards__see__more__btn">
+            See More
+          </button>
         </div>
       </div>
     </div>
