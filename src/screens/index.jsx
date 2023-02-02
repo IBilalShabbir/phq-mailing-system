@@ -2,6 +2,7 @@ import {
   HomepageAboutSection,
   HomepageBanner,
   IndustriesSolution,
+  OurClientsHomepage,
   Ourspecialities,
   StartYourTokenization,
   TokenizationHomepage,
@@ -16,6 +17,7 @@ export default function Index() {
       <IndustriesSolution />
       <StartYourTokenization />
       <Ourspecialities />
+      <OurClientsHomepage />
     </>
   );
 }

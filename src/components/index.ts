@@ -5,6 +5,7 @@ import HomepageAboutSection from './HomepageAboutSection.jsx'
 import HomepageBanner from './HomepageBanner.jsx'
 import IndustriesSolution from './IndustriesSolution.jsx'
 import IndustrySolutionCard from './IndustrySolutionCard.jsx'
+import OurClientsHomepage from './OurClientsHomepage.jsx'
 import OurSpecialistCards from './OurSpecialistCards.jsx'
 import Ourspecialities from './Ourspecialities.jsx'
 import StartYourTokenization from './StartYourTokenization.jsx'
@@ -19,6 +20,7 @@ export {
   HomepageBanner,
   IndustriesSolution,
   IndustrySolutionCard,
+  OurClientsHomepage,
   OurSpecialistCards,
   Ourspecialities,
   StartYourTokenization,
