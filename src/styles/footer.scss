@@ -89,3 +89,21 @@
     flex-direction: column;
   }
 }
+@media (max-width: 750px) {
+  .footer__img__left {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .footer__img__right img {
+    height: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .footer__img__right img {
+    display: none;
+  }
+  .footer__img__left {
+    display: none;
+  }
+}
