@@ -6,7 +6,7 @@
   position: relative;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 .nav__bar__wraper__active {
   background-color: #020202;
@@ -98,7 +98,12 @@
   justify-content: center;
   cursor: pointer;
 }
-
+.nav__contant__link__icon,
+.nav__contant__link__language__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 950px) {
   .nav__bar__btn__menu {
     display: flex;

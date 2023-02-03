@@ -10,20 +10,52 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 100%;
+  height: 600px;
+  background-color: #1a0d2b;
+  max-height: 1000px;
 }
-.header__container img {
+.header__container__svgs {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
-  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+.header__container__svgs__one {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -320px;
+  z-index: 1;
+}
+.header__container__svgs__two {
+  position: relative;
+  height: 100%;
+}
+.header__container__svgs__two svg {
+  position: absolute;
+  top: 200px;
+  right: -10px;
+  z-index: 2;
+}
+.header__container__svgs__three {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header__container__svgs__three svg {
+  position: absolute;
+  top: -177px;
+  left: 250px;
+  z-index: 2;
 }
 .header__container__text__section {
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
   top: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +77,8 @@
   max-width: 550px;
   text-align: center;
   color: var(--white);
+  display: flex;
+  flex-direction: column;
 }
 .header__container__text__section__heading span {
   background: linear-gradient(
@@ -55,6 +89,9 @@
   color: var(--white);
   padding: 0px 2px;
   border-radius: 8px;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-top: 0.5em;
 }
 .header__container__text__section__text {
   font-size: 15px;
@@ -96,7 +133,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 5em 2em;
-  padding-top: 3em;
+  padding-top: 7em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -949,6 +986,14 @@
   .tokenization__section__blue__cards {
     flex-direction: column;
   }
+  .header__container__svgs__two,
+  .header__container__svgs__one {
+    display: none;
+  }
+  .header__container__svgs__three svg {
+    bottom: -137px;
+    top: auto;
+  }
   .tokenization__section__blue__cards__card {
     margin-right: 0em;
     margin-bottom: 1em;
@@ -1055,7 +1100,13 @@
     padding-right: 0em;
   }
 }
-
+@media (max-width: 800px) {
+  .header__container__svgs__three svg {
+    left: 100px;
+    bottom: -145px;
+    width: 200px;
+  }
+}
 @media (max-width: 520px) {
   .about__section__cards {
     width: 100%;
