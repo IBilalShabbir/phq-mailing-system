@@ -10,6 +10,7 @@
 }
 .nav__bar__wraper__active {
   background-color: #020202;
+  z-index: 9999;
 }
 .nav__bar__container {
   display: flex;
