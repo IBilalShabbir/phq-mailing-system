@@ -1,3 +1,4 @@
+import PngGetintouchbg from './getintouchbg.png'
 import PngHeaderimg from './headerimg.png'
 import PngLogo from './logo.png'
 import PngOurclienteight from './ourclienteight.png'
@@ -14,6 +15,7 @@ import PngStartyour from './startyour.png'
 import PngYellowbox from './yellowbox.png'
 
 export {
+  PngGetintouchbg,
   PngHeaderimg,
   PngLogo,
   PngOurclienteight,
