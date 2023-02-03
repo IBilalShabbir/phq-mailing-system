@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-
+import ftone from "../assets/ftone.png";
+import fttwo from "../assets/fttwo.png";
 export default function Footer() {
   return (
     <div className="footer__main__container">
@@ -137,7 +137,15 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="buttom__footer__copyright">All Rights Reserved PHQ</div>
+      <div className="buttom__footer__copyright">@ All Rights Reserved PHQ</div>
+      <div className="footer__buttom__imgs">
+        <div className="footer__img__right">
+          <img src={fttwo} alt="footer image" />
+        </div>
+        <div className="footer__img__left">
+          <img src={ftone} alt="footer image" />
+        </div>
+      </div>
     </div>
   );
 }

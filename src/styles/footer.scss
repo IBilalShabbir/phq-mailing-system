@@ -60,7 +60,32 @@
 .buttom__footer__copyright {
   color: rgb(46, 46, 46);
   padding: 1em 0em;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
+}
+.footer__buttom__imgs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -4em;
+  justify-content: space-between;
+}
+.footer__img__right img {
+  height: 250px;
+  margin-bottom: -5em;
+}
+.footer__img__left {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 6em;
+}
+.footer__img__left img {
+  height: 150px;
+  margin-bottom: -9.3em;
+}
+@media (max-width: 800px) {
+  .footer__contant__container {
+    flex-direction: column;
+  }
 }

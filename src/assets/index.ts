@@ -1,3 +1,5 @@
+import PngFtone from './ftone.png'
+import PngFttwo from './fttwo.png'
 import PngGetintouchbg from './getintouchbg.png'
 import PngHeaderimg from './headerimg.png'
 import PngLogo from './logo.png'
@@ -15,6 +17,8 @@ import PngStartyour from './startyour.png'
 import PngYellowbox from './yellowbox.png'
 
 export {
+  PngFtone,
+  PngFttwo,
   PngGetintouchbg,
   PngHeaderimg,
   PngLogo,
