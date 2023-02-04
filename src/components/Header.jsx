@@ -2,10 +2,15 @@ import React, { useLayoutEffect } from "react";
 import Close from "./Close";
 import Menu from "./Menu";
 import logo from "../assets/logo.png";
+import DropDown from "./DropDown";
 import ClickAwayListener from "react-click-away-listener";
+import DropDownServices from "./DropDownServices";
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isScrolling, setIsScrolling] = React.useState(false);
+  const [isDropDownOpen, setIsDropDownOpen] = React.useState(false);
+  const [isDropDownOpenServices, setIsDropDownOpenServices] =
+    React.useState(false);
   function checkNavOpenClose() {
     if (window.innerWidth < 950) {
       setIsOpen(false);
@@ -45,8 +50,22 @@ export default function Header() {
             <div className="nav__bar__container">
               <div className="nav__contant__link">Home</div>
               <div className="nav__contant__link">About</div>
-              <div className="nav__contant__link">
-                <div className="nav__contant__link__tag">Assets</div>
+              <button
+                className="nav__contant__link"
+                onClick={() => {
+                  setIsDropDownOpen(!isDropDownOpen);
+                }}
+                onMouseOver={() => {
+                  setIsDropDownOpen(true);
+                }}
+                onMouseOut={() => {
+                  setIsDropDownOpen(false);
+                }}
+              >
+                Assets
+                {isDropDownOpen ? (
+                  <DropDown setIsDropDownOpen={setIsDropDownOpen} />
+                ) : null}
                 <div className="nav__contant__link__icon">
                   <svg
                     width="8"
@@ -61,9 +80,25 @@ export default function Header() {
                     />
                   </svg>
                 </div>
-              </div>
-              <div className="nav__contant__link">
-                <div className="nav__contant__link__tag">Services</div>
+              </button>
+              <button
+                className="nav__contant__link"
+                onClick={() => {
+                  setIsDropDownOpenServices(!isDropDownOpenServices);
+                }}
+                onMouseOver={() => {
+                  setIsDropDownOpenServices(true);
+                }}
+                onMouseLeave={() => {
+                  setIsDropDownOpenServices(false);
+                }}
+              >
+                Services
+                {isDropDownOpenServices ? (
+                  <DropDownServices
+                    setIsDropDownOpenServices={setIsDropDownOpenServices}
+                  />
+                ) : null}
                 <div className="nav__contant__link__icon">
                   <svg
                     width="8"
@@ -78,7 +113,7 @@ export default function Header() {
                     />
                   </svg>
                 </div>
-              </div>
+              </button>
               <div className="nav__contant__link">Contact</div>
               <div className="nav__contant__link__btn">Get Started</div>
               <div className="nav__contant__link__language">

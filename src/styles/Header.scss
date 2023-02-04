@@ -25,14 +25,33 @@
   margin: 1em;
   font-size: 16px;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #f3eded;
+}
+.nav__contant__link__tag {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.nav__contant__link__tag:hover {
+  color: #fbae1f;
+  transition: 200ms ease-in-out;
+}
+.nav__contant__link:hover {
+  color: #fbae1f;
+  transition: 200ms ease-in-out;
 }
 .nav__contant__link__icon svg {
   margin: 0 0.5em;
 }
-.nav__contant__link:hover {
-  color: #fbae1f;
-  transform: translate(300ms ease-in-out);
+.nav__contant__link:hover .nav__contant__link__icon svg {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
 }
+
 .nav__contant__link__btn {
   background: linear-gradient(
     270deg,
@@ -44,6 +63,7 @@
   padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
+  position: relative;
 }
 .nav__contant__link__btn:hover {
   background: linear-gradient(
@@ -53,7 +73,40 @@
   );
   transform: translate(600ms ease-in-out);
 }
-
+.dropdown__list__nav {
+  position: absolute;
+  top: 2.7em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+}
+.dropdown__services__container__nav {
+  position: absolute;
+  top: 2.7em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+}
+.dropdown__link {
+  color: #f3eded;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.dropdown__link:hover {
+  color: #fbae1f;
+  transition: 200ms ease-in-out;
+}
 .nav__contant__link__language {
   display: flex;
   align-items: center;
@@ -121,5 +174,17 @@
     background-color: #000000;
     padding: 6px 40px;
     border-radius: 12px;
+  }
+  .dropdown__list__nav {
+    margin-top: 5em;
+    color: #413e3e;
+    background-color: rgb(7, 7, 7);
+    z-index: 999;
+  }
+  .dropdown__services__container__nav {
+    margin-top: 5em;
+    color: #413e3e;
+    background-color: rgb(7, 7, 7);
+    z-index: 999;
   }
 }

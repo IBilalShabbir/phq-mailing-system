@@ -1,5 +1,7 @@
 import Aboutcard from './Aboutcard.jsx'
 import Close from './Close.jsx'
+import DropDown from './DropDown.jsx'
+import DropDownServices from './DropDownServices.jsx'
 import Footer from './Footer.jsx'
 import GetInTouch from './GetInTouch.jsx'
 import Header from './Header.jsx'
@@ -22,6 +24,8 @@ import TokenizationHomepage from './TokenizationHomepage.jsx'
 export {
   Aboutcard,
   Close,
+  DropDown,
+  DropDownServices,
   Footer,
   GetInTouch,
   Header,
