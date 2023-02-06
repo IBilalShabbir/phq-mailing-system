@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: var(--white);
 }
 .nav__contant__link {
   display: FLEX;
@@ -28,21 +28,21 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  color: #f3eded;
+  color: var(--white);
 }
 .nav__contant__link__tag {
   background-color: transparent;
-  color: white;
+  color: var(--white);
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
 .nav__contant__link__tag:hover {
-  color: #fbae1f;
+  color: var(--dark);
   transition: 200ms ease-in-out;
 }
 .nav__contant__link:hover {
-  color: #fbae1f;
+  color: var(--dark);
   transition: 200ms ease-in-out;
 }
 .nav__contant__link__icon svg {
@@ -76,36 +76,24 @@
 }
 .dropdown__list__nav {
   position: absolute;
-  top: 2.7em;
+  top: 45px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #000000;
+  background-color: var(--white);
   padding: 12px;
   cursor: pointer;
-  color: white;
-}
-.dropdown__services__container__nav {
-  position: absolute;
-  top: 2.7em;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--black);
-  padding: 12px;
-  cursor: pointer;
-  color: white;
+  color: var(--white);
 }
 .dropdown__link {
-  color: #f3eded;
+  color: var(--darkblue);
   padding: 12px;
   font-size: 14px;
   font-weight: 500;
 }
 .dropdown__link:hover {
-  color: #fbae1f;
+  color: var(--dark);
   transition: 200ms ease-in-out;
 }
 .nav__contant__link__language {
@@ -117,7 +105,7 @@
   cursor: pointer;
 }
 .nav__contant__link__language:hover {
-  color: #fbae1f;
+  color: var(--dark);
   transform: translate(300ms ease-in-out);
 }
 .nav__contant__link__language__icon svg {
@@ -166,23 +154,17 @@
   }
   .nav__bar__container {
     position: absolute;
-    background-color: #fff;
+    background-color: var(--white);
     z-index: 999;
     top: 70px;
     right: 0;
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+    background-color: var(--black);
     padding: 6px 40px;
     border-radius: 12px;
   }
   .dropdown__list__nav {
-    margin-top: 5em;
-    color: #413e3e;
-    background-color: rgb(7, 7, 7);
-    z-index: 999;
-  }
-  .dropdown__services__container__nav {
     margin-top: 5em;
     color: #413e3e;
     background-color: rgb(7, 7, 7);
