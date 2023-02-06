@@ -1,6 +1,6 @@
 import React from "react";
 import { PngStartyour } from "../assets";
-import { Autoplay, FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function RecentlyListedCard({
@@ -19,18 +19,11 @@ export default function RecentlyListedCard({
         <Swiper
           loop
           spaceBetween={0}
-          modules={[Autoplay, Pagination, FreeMode]}
-          freeMode={true}
-          speed={3000}
+          modules={[Pagination, FreeMode]}
           pagination={{
             clickable: true,
           }}
           scrollbar={{ draggable: true }}
-          autoplay={{
-            delay: 1,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
           className="recently__listed__assets__slider__item__entry__slides"
         >
           <SwiperSlide>

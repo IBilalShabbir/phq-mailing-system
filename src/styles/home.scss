@@ -228,14 +228,16 @@
 }
 .tokenization__section {
   width: 100%;
-  max-width: 1650px;
-  padding: 5em 2em;
+  max-width: 1440px;
+  padding: 5em 0em;
   padding-bottom: 0em;
   padding-top: 8em;
   margin: 0 auto;
 }
 .tokenization__section__blue {
   background-color: var(--darkblue);
+  width: calc(100% - 2em);
+  margin: 0 auto;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -592,7 +594,7 @@
 }
 .recently__listed__assets__slider {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
 }
 .recently__listed__assets__slider__item {
   width: 100%;
@@ -623,7 +625,7 @@
 }
 .recently__listed__assets__slider__item__entry {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   background-color: var(--white);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -634,7 +636,7 @@
 }
 .recently__listed__assets__slider__item__bottom {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -1069,7 +1071,9 @@
   .testinomials__section__heading,
   .our__clients__homepage__container__title,
   .get__in__touch__container__overlay__content__heading__left,
-  .industries__solutions__heading {
+  .industries__solutions__heading,
+  .tokenization__section__blue__heading,
+  .about__section__heading {
     font-size: 28px;
   }
   .get__in__touch__container__overlay {
@@ -1145,6 +1149,17 @@
     bottom: -145px;
     width: 200px;
   }
+  .tokenization__section__blue {
+    border-radius: 25px;
+    width: calc(100% - 1em);
+  }
+  .tokenization__section__blue__highlight {
+    border-radius: 25px;
+    font-size: 17px;
+  }
+  .testimonials__container__entry__content__heading {
+    font-size: 20px;
+  }
 }
 @media (max-width: 520px) {
   .about__section__cards {
@@ -1166,6 +1181,15 @@
   }
   .get__in__touch__container__overlay__content__heading__left {
     margin-bottom: 0.5em;
+  }
+  .homepage__our__specialities__container__title,
+  .testinomials__section__heading,
+  .our__clients__homepage__container__title,
+  .get__in__touch__container__overlay__content__heading__left,
+  .industries__solutions__heading,
+  .tokenization__section__blue__heading,
+  .about__section__heading {
+    font-size: 25px;
   }
 }
 @media (max-width: 400px) {
