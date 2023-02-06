@@ -41,11 +41,10 @@
 .header__container__svgs__three {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 .header__container__svgs__three svg {
   position: absolute;
-  top: -177px;
+  bottom: -137px;
   left: 250px;
   z-index: 2;
 }
@@ -1028,9 +1027,11 @@
   .header__container__svgs__one {
     display: none;
   }
+  .header__container__svgs__three {
+    height: 100%;
+  }
   .header__container__svgs__three svg {
     bottom: -137px;
-    top: auto;
   }
   .tokenization__section__blue__cards__card {
     margin-right: 0em;
