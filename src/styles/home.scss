@@ -11,7 +11,7 @@
   justify-content: center;
   position: relative;
   height: 600px;
-  background-color: #1a0d2b;
+  background-color: var(--darkblue);
   max-height: 1000px;
 }
 .header__container__svgs {
@@ -232,7 +232,7 @@
   margin: 0 auto;
 }
 .tokenization__section__blue {
-  background-color: #1a0d2b;
+  background-color: var(--darkblue);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -323,6 +323,7 @@
 .industries__solutions__heading {
   font-size: 35px;
   margin-bottom: 0.5em;
+  font-weight: 600;
   padding: 0em 2em;
   text-align: center;
 }
@@ -365,6 +366,34 @@
 }
 .industries__solutions__content__card__info {
   font-size: 15px;
+}
+.industries__solutions__new__content__card {
+  padding: 2.5em;
+  border-radius: 10px;
+  min-height: 300px;
+}
+
+.industries__solutions__new__content__card__heading {
+  font-size: 22px;
+  color: var(--white);
+  margin: 0.5em 0em;
+  font-weight: bold;
+}
+.industries__solutions__new__content__card__info__more__btn {
+  margin-top: 1em;
+}
+.industries__solutions__new__content__card__info__more__btn button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
+.industries__solutions__new__content__card__info {
+  font-size: 15px;
+  color: var(--white);
 }
 .homepage__startyour {
   width: 100%;
@@ -437,7 +466,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background-color: #281740;
+  background-color: var(--lightblue);
 }
 
 .homepage__our__specialities__container__title {
@@ -451,7 +480,7 @@
   width: 100%;
 }
 .OurSpecialistCards__solutions__content__card {
-  background-color: #12091e;
+  background-color: var(--darkblue);
   padding: 2em 1.5em;
   border-radius: 10px;
   min-height: 300px;
@@ -473,7 +502,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 .homepage__our__specialities__container__slider__arrow button {
   background-color: transparent;
@@ -695,7 +724,7 @@
   padding: 0em 3em;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.99);
-  border-radius: 8px;
+  border-radius: 50px;
   color: rgba(0, 0, 0, 0.99);
   font-size: 15px;
   font-weight: 600;
@@ -704,7 +733,12 @@
   justify-content: center;
 }
 .recently__listed__assets__cards__see__more__btn:hover {
-  background-color: rgba(0, 0, 0, 0.99);
+  background: linear-gradient(
+    270deg,
+    rgb(58, 4, 87) 20%,
+    rgb(251, 174, 31) 94%
+  );
+
   color: var(--white);
   transition: 300ms ease-in-out;
 }
@@ -902,7 +936,7 @@
   outline: 1px solid transparent;
   border-radius: 50px;
   margin-bottom: 1.2em;
-  background-color: #1d112c;
+  background-color: var(--lightblue);
   color: var(--white);
 }
 .get__in__touch__content__right__entry__input__field:hover {
@@ -921,7 +955,7 @@
   outline: 1px solid transparent;
   border-radius: 15px;
   margin-bottom: 1.2em;
-  background-color: #1d112c;
+  background-color: var(--lightblue);
   color: var(--white);
   resize: none;
 }
@@ -1030,7 +1064,8 @@
   .homepage__our__specialities__container__title,
   .testinomials__section__heading,
   .our__clients__homepage__container__title,
-  .get__in__touch__container__overlay__content__heading__left {
+  .get__in__touch__container__overlay__content__heading__left,
+  .industries__solutions__heading {
     font-size: 28px;
   }
   .get__in__touch__container__overlay {
@@ -1053,7 +1088,7 @@
   }
   .get__in__touch__container {
     height: 680px;
-    background-color: #13091f;
+    background-color: var(--darkblue);
     padding: 0em;
     border-radius: 20px;
     width: calc(100% - 4em);

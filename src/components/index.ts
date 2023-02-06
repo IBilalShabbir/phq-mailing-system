@@ -9,6 +9,7 @@ import HomepageAboutSection from './HomepageAboutSection.jsx'
 import HomepageBanner from './HomepageBanner.jsx'
 import IndustriesSolution from './IndustriesSolution.jsx'
 import IndustrySolutionCard from './IndustrySolutionCard.jsx'
+import IndustrySolutionCardNew from './IndustrySolutionCardNew.jsx'
 import Menu from './Menu.jsx'
 import OurClientsHomepage from './OurClientsHomepage.jsx'
 import OurSpecialistCards from './OurSpecialistCards.jsx'
@@ -33,6 +34,7 @@ export {
   HomepageBanner,
   IndustriesSolution,
   IndustrySolutionCard,
+  IndustrySolutionCardNew,
   Menu,
   OurClientsHomepage,
   OurSpecialistCards,

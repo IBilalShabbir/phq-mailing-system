@@ -9,8 +9,9 @@
   z-index: 9999;
 }
 .nav__bar__wraper__active {
-  background-color: #020202;
+  background-color: var(--darkblue);
   z-index: 9999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .nav__bar__container {
   display: flex;
@@ -92,7 +93,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #000000;
+  background-color: var(--black);
   padding: 12px;
   cursor: pointer;
   color: white;
