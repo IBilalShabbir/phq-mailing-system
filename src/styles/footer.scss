@@ -5,11 +5,10 @@
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2em 0em;
+  padding: 2em;
+  flex-wrap: wrap;
 }
-.footer__contant__container :nth-child(3) {
-  max-width: 270px;
-}
+
 .footer__contact__text {
   font-size: 18px;
 }
@@ -17,6 +16,7 @@
   color: #a200a8;
   font-weight: bold;
   margin: 10px 0px;
+  margin-top: 0em;
 }
 .footer__contant__logo span {
   color: black;
@@ -24,22 +24,30 @@
 }
 .footer__contact__col {
   flex: 1;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   padding: 0em 1em;
+  margin-bottom: 1em;
+}
+.footer__contant__col__sub__heading__contant {
+  margin-bottom: 0.5em;
+}
+.footer__contact__text {
+  margin: 0.5em 0em;
 }
 .footer__contant__col__heading {
   font-size: 20px;
   font-weight: 600;
   color: #a200a8;
   margin: 10px 0px;
+  margin-top: 0em;
 }
 .footer__contant__col__sub__heading {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  margin: 6px 0px;
+  margin-bottom: 12px;
   cursor: pointer;
   font-weight: 500;
 }
@@ -51,11 +59,16 @@
   align-items: center;
   margin: 6px 0px;
 }
+
 .footer__contant__icon__item__svg {
-  width: 20px;
-  height: 20px;
-  margin: 12px;
+  margin: 6px;
   color: #13091f;
+  display: flex;
+  align-items: center;
+}
+.footer__contant__icon__item__svg svg {
+  width: 25px;
+  height: 25px;
 }
 .footer__contant__icon__item__svg:hover {
   color: #a200a8;
@@ -86,6 +99,13 @@
 .footer__img__left img {
   height: 150px;
   margin-bottom: -9.3em;
+}
+@media (max-width: 1000px) {
+  .footer__contact__col {
+    flex: auto;
+    width: 100%;
+    margin-bottom: 2em;
+  }
 }
 @media (max-width: 800px) {
   .footer__contant__container {
