@@ -49,6 +49,7 @@ export default function RecentlyListedAssets() {
                 mainheading="Studio in Studio One - Dubai Marina"
                 budget="736,393"
                 investers="116 investors"
+                city={true}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -58,6 +59,7 @@ export default function RecentlyListedAssets() {
                 mainheading="Studio in Studio One - Dubai Marina"
                 budget="736,393"
                 investers="116 investors"
+                city={true}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -67,6 +69,7 @@ export default function RecentlyListedAssets() {
                 mainheading="Studio in Studio One - Dubai Marina"
                 budget="736,393"
                 investers="116 investors"
+                city={false}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -76,6 +79,7 @@ export default function RecentlyListedAssets() {
                 mainheading="Studio in Studio One - Dubai Marina"
                 budget="736,393"
                 investers="116 investors"
+                city={false}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -85,6 +89,7 @@ export default function RecentlyListedAssets() {
                 mainheading="Studio in Studio One - Dubai Marina"
                 budget="736,393"
                 investers="116 investors"
+                city={true}
               />
             </SwiperSlide>
           </Swiper>

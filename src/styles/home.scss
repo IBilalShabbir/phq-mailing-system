@@ -665,7 +665,35 @@
   cursor: pointer;
 }
 .recently__listed__assets__slider__item__bottom__btn:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--white);
+}
+.recently__listed__assets__slider__item__bottom__btn__div {
+  display: flex;
+  align-items: center;
+}
+.recently__listed__assets__slider__item__bottom__btn__second {
+  margin-bottom: 0.5em;
+  padding: 0.2em 0.5em;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5em;
+}
+.recently__listed__assets__slider__item__bottom__btn__second svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.2em;
+}
+.recently__listed__assets__slider__item__bottom__btn__second:hover {
+  background-color: rgba(0, 0, 0, 0.8);
   color: var(--white);
 }
 .recently__listed__assets__slider__item__bottom__heading {

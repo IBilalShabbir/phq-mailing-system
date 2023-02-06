@@ -58,9 +58,6 @@ export default function Testinomials() {
         <Swiper
           slidesPerView={slidesPerView}
           spaceBetween={30}
-          style={{
-            marginTop: "2em",
-          }}
           modules={[FreeMode]}
           freeMode={true}
         >
