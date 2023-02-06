@@ -1,5 +1,5 @@
 export default function TestinomialEntry({
-  img,
+  image,
   heading,
   subheading,
   description,
@@ -7,7 +7,7 @@ export default function TestinomialEntry({
   return (
     <div className="testimonials__container__entry">
       <div className="testimonials__container__entry__image">
-        <img src={img} alt="profileimg" />
+        <img src={image} alt="profileimg" />
       </div>
       <div className="testimonials__container__entry__content">
         <div className="testimonials__container__entry__content__heading">

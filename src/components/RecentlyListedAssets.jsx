@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Autoplay, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { PngStartyour } from "../assets";
 import RecentlyListedCard from "./RecentlyListedCard";
 
 export default function RecentlyListedAssets() {
-  const [slidesPerView, setSlidesPerView] = useState(5);
+  const [slidesPerView, setSlidesPerView] = useState(4);
   function changeSlidesPerView() {
     if (window.innerWidth < 540) {
-      setSlidesPerView(1.2);
+      setSlidesPerView(1);
     } else if (window.innerWidth < 800) {
-      setSlidesPerView(2);
+      setSlidesPerView(1.5);
     } else if (window.innerWidth < 1000) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth < 1350) {
       setSlidesPerView(3);
-    } else if (window.innerWidth < 1400) {
-      setSlidesPerView(4);
     } else {
-      setSlidesPerView(5);
+      setSlidesPerView(4);
     }
   }
   useEffect(() => {
@@ -31,9 +30,6 @@ export default function RecentlyListedAssets() {
         </div>
         <div className="recently__listed__assets__cards">
           <Swiper
-            style={{
-              marginTop: "2em",
-            }}
             loop
             spaceBetween={30}
             modules={[Autoplay, FreeMode]}
