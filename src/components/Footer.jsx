@@ -128,9 +128,11 @@ export default function Footer() {
           <div className="footer__contant__col__heading">Contact Us</div>
           <div className="footer__contant__col__sub__heading__contant">
             354 454 5344 343
+            <div>354 454 5344 343</div>
           </div>
           <div className="footer__contant__col__sub__heading__contant">
             info@phq.com
+            <div>hellophq@gmail.com</div>
           </div>
           <div className="footer__contant__col__sub__heading__contant">
             3rd floor, DHA - Q Block, Plot # 44, Mumbai, 34000, Pakistan
