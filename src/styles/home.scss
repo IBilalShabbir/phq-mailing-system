@@ -201,7 +201,11 @@
 }
 .about__section__card__number {
   background: linear-gradient(#ffbf01, #c89500);
-  padding: 0.5em 0.8em;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 30px;
   border-radius: 50px;
   font-weight: 500;

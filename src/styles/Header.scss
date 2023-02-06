@@ -146,7 +146,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .nav__bar__btn__menu {
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@
     background-color: var(--white);
     z-index: 999;
     top: 70px;
-    right: 0;
+    right: 35px;
     display: flex;
     flex-direction: column;
     background-color: var(--black);
@@ -165,9 +165,12 @@
     border-radius: 12px;
   }
   .dropdown__list__nav {
-    margin-top: 5em;
-    color: #413e3e;
     background-color: rgb(7, 7, 7);
     z-index: 999;
+    left: 40px;
+    top: 140px;
+  }
+  .dropdown__link {
+    color: var(--white);
   }
 }

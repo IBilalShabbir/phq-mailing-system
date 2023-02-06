@@ -12,7 +12,7 @@ export default function Header() {
   const [isDropDownOpenServices, setIsDropDownOpenServices] =
     React.useState(false);
   function checkNavOpenClose() {
-    if (window.innerWidth < 950) {
+    if (window.innerWidth < 1000) {
       setIsOpen(false);
     } else {
       setIsOpen(true);
@@ -42,7 +42,7 @@ export default function Header() {
         {isOpen ? (
           <ClickAwayListener
             onClickAway={() => {
-              if (window.innerWidth < 950) {
+              if (window.innerWidth < 1000) {
                 setIsOpen(false);
               }
             }}
