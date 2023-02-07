@@ -166,7 +166,23 @@
   border-radius: 20px;
   padding: 4em 2em 2em 2em;
   justify-content: space-between;
-  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.about__section__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#450161, #0b132f);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+}
+.about__section__card:hover::before {
+  opacity: 1;
 }
 
 .about__section__card__upper {
@@ -200,6 +216,7 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 .about__section__card__number {
   background: linear-gradient(#ffbf01, #c89500);
@@ -213,8 +230,6 @@
   font-weight: 500;
 }
 .about__section__card:hover {
-  background-image: linear-gradient(#450161, #0b132f);
-
   .about__section__card__icon {
     color: #c89500;
   }

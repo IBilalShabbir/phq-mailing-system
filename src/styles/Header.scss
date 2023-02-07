@@ -47,6 +47,7 @@
 }
 .nav__contant__link__icon svg {
   margin: 0 0.5em;
+  transition: all 0.5s ease-in-out;
 }
 .nav__contant__link:hover .nav__contant__link__icon svg {
   transform: rotate(180deg);
