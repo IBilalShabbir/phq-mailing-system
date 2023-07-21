@@ -66,14 +66,29 @@
   border-radius: 20px;
   cursor: pointer;
   position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
-.nav__contant__link__btn:hover {
+.nav__contant__link__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     270deg,
     rgba(251, 174, 31, 1) 30%,
     rgba(58, 4, 87, 1) 80%
   );
-  transform: translate(600ms ease-in-out);
+  opacity: 0;
+  border-radius: 20px;
+  z-index: -1;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.nav__contant__link__btn:hover::before {
+  opacity: 1;
 }
 .dropdown__list__nav {
   position: absolute;
